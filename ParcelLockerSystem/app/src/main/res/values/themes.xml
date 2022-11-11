@@ -1,0 +1,18 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.ParcelLockerSystem" parent="Theme.MaterialComponents.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/default_text_blue</item>
+        <item name="colorPrimaryVariant">@color/blue_deep_water</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <!-- Secondary brand color. -->
+        <item name="colorOnSecondary">@color/engine_oil_blue</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor" tools:targetApi="O">?attr/colorPrimaryVariant</item>
+        <!-- Customize your theme here. -->
+        <item name="actionBarTheme">@color/zxing_transparent</item>
+
+        <!-- enable window content transitions -->
+        <item name="android:windowActivityTransitions">true</item>
+    </style>
+</resources>

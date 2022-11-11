@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    tools:context=".view_registered_devices">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Registered Devices"
+        android:textSize="30dp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="20dp"
+        android:textColor="@color/default_text_blue"/>
+
+    <ProgressBar
+        android:id="@+id/device_loading"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:layout_gravity="center"
+        android:visibility="visible"
+        android:indeterminate="true"
+        android:layout_marginTop="150dp"
+        android:indeterminateTint="@color/blue_deep_water"
+        />
+    <ListView
+        android:id="@+id/list_registered_devices"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:listitem="@android:layout/simple_list_item_1"
+        android:visibility="gone"/>
+</LinearLayout>

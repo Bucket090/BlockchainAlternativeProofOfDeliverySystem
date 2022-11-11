@@ -1,0 +1,7 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<LogicalDesign class="oracle.dbtools.crest.model.design.logical.LogicalDesign" name="Logical" id="379B9257-A75C-E670-DDC7-4D279C1350B6" mainViewID="A4E7D8DA-5045-6262-09A0-37AAC6C2C654">
+<createdBy>Jake_</createdBy>
+<createdTime>2021-10-11 21:32:41 UTC</createdTime>
+<ownerDesignName>blocker_db</ownerDesignName>
+<shouldBeOpen>false</shouldBeOpen>
+</LogicalDesign>

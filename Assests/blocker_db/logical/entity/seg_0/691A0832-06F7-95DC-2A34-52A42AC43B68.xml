@@ -1,0 +1,86 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="691A0832-06F7-95DC-2A34-52A42AC43B68" name="Registered_devices">
+<createdBy>Jake_</createdBy>
+<createdTime>2022-02-05 23:04:44 UTC</createdTime>
+<ownerDesignName>blocker_db</ownerDesignName>
+<engineerTo>
+<item key="9067BA9C-75D2-2321-FA0B-EF59CB5B13DF" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="User_Id" id="3860BA4B-D693-22A5-C028-F4C70EA49892">
+<createdBy>Jake_</createdBy>
+<createdTime>2022-02-05 23:05:30 UTC</createdTime>
+<generatorID>255FD859-728A-925B-FAE8-DA233166D95F</generatorID>
+<ownerDesignName>blocker_db</ownerDesignName>
+<engineerTo>
+<item key="9067BA9C-75D2-2321-FA0B-EF59CB5B13DF" value="true"/>
+</engineerTo>
+<referedAttribute>B989D85C-367B-7BED-6347-EA5324968905</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT057</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Registered_device_id" id="062273F9-5A0B-5604-E22E-28C752F436F6">
+<createdBy>Jake_</createdBy>
+<createdTime>2022-02-05 23:05:37 UTC</createdTime>
+<ownerDesignName>blocker_db</ownerDesignName>
+<engineerTo>
+<item key="9067BA9C-75D2-2321-FA0B-EF59CB5B13DF" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT037</logicalDatatype>
+<dataTypeSize>256</dataTypeSize>
+<ownDataTypeParameters>256,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="smart_contract" id="C8FA8B7B-E196-A1F6-C018-5BF0D543A2E7">
+<createdBy>Jake_</createdBy>
+<createdTime>2022-02-05 23:05:57 UTC</createdTime>
+<ownerDesignName>blocker_db</ownerDesignName>
+<engineerTo>
+<item key="9067BA9C-75D2-2321-FA0B-EF59CB5B13DF" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT037</logicalDatatype>
+<dataTypeSize>256</dataTypeSize>
+<ownDataTypeParameters>256,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="set_as_default" id="4AC61BB4-1DE6-4EC9-805F-AB7EDA484042">
+<createdBy>Jake_</createdBy>
+<createdTime>2022-02-13 20:29:58 UTC</createdTime>
+<ownerDesignName>blocker_db</ownerDesignName>
+<engineerTo>
+<item key="9067BA9C-75D2-2321-FA0B-EF59CB5B13DF" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT034</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<ownDataTypeParameters>1,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="2746AF4E-B258-EC67-6A33-CDD9F4C5A88F" name="Key_3">
+<createdBy>Jake_</createdBy>
+<createdTime>2022-02-13 20:47:58 UTC</createdTime>
+<ownerDesignName>blocker_db</ownerDesignName>
+<engineerTo>
+<item key="9067BA9C-75D2-2321-FA0B-EF59CB5B13DF" value="true"/>
+</engineerTo>
+<newElementsIDs>C8FA8B7B-E196-A1F6-C018-5BF0D543A2E7</newElementsIDs>
+<usedAttributes>
+<attributeRef>C8FA8B7B-E196-A1F6-C018-5BF0D543A2E7</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

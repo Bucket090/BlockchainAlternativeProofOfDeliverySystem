@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="bluetooth_theme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- active thumb & track color (30% transparency) -->
+        <item name="colorPrimary">@color/default_text_blue</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <item name="colorPrimaryVariant">@color/blue_deep_water</item>
+        <!-- inactive thumb color -->
+        <item name="colorOnSecondary">@color/black</item>
+        <item name="actionBarTheme">@color/zxing_transparent</item>
+        <!-- inactive track color (30% transparency) -->
+    </style>
+
+
+
+</resources>

@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Blocker</string>
+    <string name="error_email_msg">Make sure your email address is correct</string>
+    <string name="error_email_msg2">Email address is already registered</string>
+    <string name="error_password_msg">You must have at least 1 number and 1 capital letter</string>
+    <string name="error_password_confirm_msg">Password must match</string>
+    <string name="error_dob">Date Format should be (dd/mm/yyyy)</string>
+    <string name="error_mobile">Mobile Format should be 8-12 digits</string>
+    <string name="error_generic">Required*</string>
+    <string name="error_locker_ID">Link with your device, click on the bluetooth icon</string>
+    <string name="error_reg_password_len">Password must be exactly 4 digits</string>
+
+</resources>

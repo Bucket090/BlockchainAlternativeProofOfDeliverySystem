@@ -1,0 +1,86 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="0FCD3E28-10F3-5000-E867-EAE05354B60F" name="User_Credential">
+<createdBy>Jake_</createdBy>
+<createdTime>2021-10-12 15:21:46 UTC</createdTime>
+<ownerDesignName>blocker_db</ownerDesignName>
+<engineerTo>
+<item key="9067BA9C-75D2-2321-FA0B-EF59CB5B13DF" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="User_Id" id="B989D85C-367B-7BED-6347-EA5324968905">
+<createdBy>Jake_</createdBy>
+<createdTime>2021-10-12 15:25:56 UTC</createdTime>
+<generatorID>F17088CE-AFF7-56C2-B582-E59815C1E7CA</generatorID>
+<ownerDesignName>blocker_db</ownerDesignName>
+<engineerTo>
+<item key="9067BA9C-75D2-2321-FA0B-EF59CB5B13DF" value="true"/>
+</engineerTo>
+<referedAttribute>E4ACFD41-4E3E-8620-4153-ECE91EFE5E8E</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT057</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Email" id="3D044DB5-6EC0-9CD3-978C-483E2844B8AA">
+<createdBy>Jake_</createdBy>
+<createdTime>2021-10-12 15:22:24 UTC</createdTime>
+<ownerDesignName>blocker_db</ownerDesignName>
+<engineerTo>
+<item key="9067BA9C-75D2-2321-FA0B-EF59CB5B13DF" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT037</logicalDatatype>
+<dataTypeSize>150</dataTypeSize>
+<ownDataTypeParameters>150,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Password" id="0840673A-B6CD-28A6-E9DD-A349EE349AA8">
+<createdBy>Jake_</createdBy>
+<createdTime>2021-10-12 15:22:38 UTC</createdTime>
+<ownerDesignName>blocker_db</ownerDesignName>
+<engineerTo>
+<item key="9067BA9C-75D2-2321-FA0B-EF59CB5B13DF" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Role_Id" id="6E2DE23B-33D9-B101-9892-277BE77BF81D">
+<createdBy>Jake_</createdBy>
+<createdTime>2021-10-12 15:25:19 UTC</createdTime>
+<generatorID>4880B82E-F379-18F8-24E6-D303152D680A</generatorID>
+<ownerDesignName>blocker_db</ownerDesignName>
+<engineerTo>
+<item key="9067BA9C-75D2-2321-FA0B-EF59CB5B13DF" value="true"/>
+</engineerTo>
+<referedAttribute>1CC5FF7B-5710-1B78-8B68-080CA2F9F535</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT057</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="C36077BB-1C3C-C4D6-8E4A-4F9C2BCD3524" name="User_Credentials PK">
+<createdBy>Jake_</createdBy>
+<createdTime>2021-10-12 15:22:22 UTC</createdTime>
+<ownerDesignName>blocker_db</ownerDesignName>
+<engineerTo>
+<item key="9067BA9C-75D2-2321-FA0B-EF59CB5B13DF" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>B989D85C-367B-7BED-6347-EA5324968905</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

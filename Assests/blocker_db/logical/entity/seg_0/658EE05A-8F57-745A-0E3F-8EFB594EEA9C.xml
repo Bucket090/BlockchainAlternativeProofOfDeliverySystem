@@ -1,0 +1,100 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="658EE05A-8F57-745A-0E3F-8EFB594EEA9C" name="user_roles">
+<createdBy>Jake_</createdBy>
+<createdTime>2021-10-12 15:34:41 UTC</createdTime>
+<ownerDesignName>blocker_db</ownerDesignName>
+<engineerTo>
+<item key="9067BA9C-75D2-2321-FA0B-EF59CB5B13DF" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="User_Id" id="11F76889-E65D-0D6A-49ED-02C81559A668">
+<createdBy>Jake_</createdBy>
+<createdTime>2021-10-12 15:34:55 UTC</createdTime>
+<generatorID>F5F556DB-E458-4711-6A41-616FEFBCEF9D</generatorID>
+<ownerDesignName>blocker_db</ownerDesignName>
+<engineerTo>
+<item key="9067BA9C-75D2-2321-FA0B-EF59CB5B13DF" value="true"/>
+</engineerTo>
+<referedAttribute>B989D85C-367B-7BED-6347-EA5324968905</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT057</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Role_Id" id="0CFF4401-AD12-494D-A220-2BB9562397C3">
+<createdBy>Jake_</createdBy>
+<createdTime>2021-10-12 15:34:47 UTC</createdTime>
+<generatorID>ADF21DB1-695A-9E86-1FC7-1513F6535A93</generatorID>
+<ownerDesignName>blocker_db</ownerDesignName>
+<engineerTo>
+<item key="9067BA9C-75D2-2321-FA0B-EF59CB5B13DF" value="true"/>
+</engineerTo>
+<referedAttribute>1CC5FF7B-5710-1B78-8B68-080CA2F9F535</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT057</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="System_Id" id="7811E128-D6E8-A3A5-843E-9B7F879B4CE1">
+<createdBy>Jake_</createdBy>
+<createdTime>2021-10-12 15:35:29 UTC</createdTime>
+<ownerDesignName>blocker_db</ownerDesignName>
+<engineerTo>
+<item key="9067BA9C-75D2-2321-FA0B-EF59CB5B13DF" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT037</logicalDatatype>
+<dataTypeSize>10</dataTypeSize>
+<ownDataTypeParameters>10,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Company_Id" id="DDDF1386-F69F-A0E7-B804-0F3C976AEAC6">
+<createdBy>Jake_</createdBy>
+<createdTime>2021-10-12 15:40:42 UTC</createdTime>
+<generatorID>61BA0DF0-ABFE-4FA4-F3C9-299D98F3B29E</generatorID>
+<ownerDesignName>blocker_db</ownerDesignName>
+<engineerTo>
+<item key="9067BA9C-75D2-2321-FA0B-EF59CB5B13DF" value="true"/>
+</engineerTo>
+<referedAttribute>B1A82B29-E67A-B22D-6F48-FC7829FA6B3F</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT057</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="72B2A9E3-DDF0-4B0A-5DC3-DC8E0743F28E" name="user_roles PK">
+<createdBy>Jake_</createdBy>
+<createdTime>2021-10-12 15:34:47 UTC</createdTime>
+<ownerDesignName>blocker_db</ownerDesignName>
+<engineerTo>
+<item key="9067BA9C-75D2-2321-FA0B-EF59CB5B13DF" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>11F76889-E65D-0D6A-49ED-02C81559A668</attributeRef>
+</usedAttributes>
+</identifier>
+<identifier id="9F631587-069A-6BDB-882C-F23159EA4313" name="Key_2">
+<createdBy>Jake_</createdBy>
+<createdTime>2021-10-12 15:36:28 UTC</createdTime>
+<ownerDesignName>blocker_db</ownerDesignName>
+<engineerTo>
+<item key="9067BA9C-75D2-2321-FA0B-EF59CB5B13DF" value="true"/>
+</engineerTo>
+<newElementsIDs>7811E128-D6E8-A3A5-843E-9B7F879B4CE1</newElementsIDs>
+<usedAttributes>
+<attributeRef>7811E128-D6E8-A3A5-843E-9B7F879B4CE1</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:theme="@style/Theme.Design.NoActionBar"
+    android:background="@color/white"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Device_control">
+
+    <TextView
+        android:layout_width="196dp"
+        android:layout_height="17dp"
+        android:text="Connect to Device"
+        android:id="@+id/connect"
+        android:textSize="15dp"
+        android:textColor="@color/black"
+        android:layout_marginStart="8dp"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="16dp"
+        android:layout_marginLeft="16dp"
+        app:layout_constraintLeft_toLeftOf="parent" />
+
+    <ProgressBar
+        android:id="@+id/progress_scan_devices"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_gravity="center"
+        android:indeterminate="true"
+        android:layout_marginTop="50dp"
+        android:visibility="gone"
+        android:indeterminateTint="@color/blue_deep_water"
+        app:layout_constraintBottom_toBottomOf="@+id/list_available_devices"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.09" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/scanBTN"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/bluetooth_searching"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.941"
+        app:layout_constraintStart_toEndOf="@+id/connect"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+
+    <ListView
+        android:id="@+id/list_available_devices"
+        android:layout_width="406dp"
+        android:layout_height="615dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginLeft="20dp"
+        android:theme="@style/Theme.Design.Light"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/progress_scan_devices"
+        tools:listitem="@android:layout/simple_list_item_1" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

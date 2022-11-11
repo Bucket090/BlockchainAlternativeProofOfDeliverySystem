@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    tools:context=".create_account_part6">
+
+    <ScrollView
+        android:layout_gravity="center"
+        android:scrollbars="none"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:layout_gravity="center_horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="What is your Address?"
+            android:textColor="@color/black"
+            android:fontFamily="sans-serif-light"
+            android:textSize="30dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:padding="20dp"
+            android:layout_marginTop="10dp"/>
+
+    <com.google.android.material.textfield.TextInputLayout
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="0dp"
+        android:elevation="12dp"
+        android:textColorHint="@color/black"
+        app:boxCornerRadiusBottomEnd="15dp"
+        app:boxCornerRadiusBottomStart="15dp"
+        app:boxCornerRadiusTopEnd="15dp"
+        app:boxCornerRadiusTopStart="15dp"
+        app:boxStrokeColor="@color/black"
+        app:boxStrokeWidth="1dp"
+        app:counterMaxLength="10"
+        app:counterEnabled="true"
+        app:counterTextColor="@color/black"
+        app:endIconCheckable="true"
+        app:endIconMode="clear_text"
+        app:endIconTint="@color/black">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/flatNumberINP"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Flat Number"
+            android:maxLength="10"
+            android:inputType="number"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.textfield.TextInputLayout
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:elevation="12dp"
+        android:textColorHint="@color/black"
+        app:boxCornerRadiusBottomEnd="15dp"
+        app:boxCornerRadiusBottomStart="15dp"
+        app:boxCornerRadiusTopEnd="15dp"
+        app:boxCornerRadiusTopStart="15dp"
+        app:boxStrokeColor="@color/black"
+        app:boxStrokeWidth="1dp"
+        app:counterMaxLength="10"
+        app:counterEnabled="true"
+        app:counterTextColor="@color/black"
+        app:endIconCheckable="true"
+        app:endIconMode="clear_text"
+        app:endIconTint="@color/black">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/streetNumberINP"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:maxLength="10"
+            android:hint="Street Number"
+            android:inputType="number"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+        <TextView
+            android:id="@+id/errorStreetNameTXT"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            android:text="@string/error_generic"
+            android:textColor="@color/crimson_red"
+            android:layout_marginLeft="25dp"
+            android:textSize="12dp"
+            android:visibility="invisible" />
+
+        <com.google.android.material.textfield.TextInputLayout
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:elevation="12dp"
+        android:textColorHint="@color/black"
+        app:boxCornerRadiusBottomEnd="15dp"
+        app:boxCornerRadiusBottomStart="15dp"
+        app:boxCornerRadiusTopEnd="15dp"
+        app:boxCornerRadiusTopStart="15dp"
+        app:boxStrokeColor="@color/black"
+        app:boxStrokeWidth="1dp"
+        app:counterMaxLength="100"
+        app:counterEnabled="true"
+        app:counterTextColor="@color/black"
+        app:endIconCheckable="true"
+        app:endIconMode="clear_text"
+        app:endIconTint="@color/black">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/streetNameINP"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Street Name"
+            android:maxLength="100"
+            android:inputType="text"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+        <TextView
+            android:id="@+id/errorLocalityTXT"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            android:text="@string/error_generic"
+            android:textColor="@color/crimson_red"
+            android:layout_marginLeft="25dp"
+            android:textSize="12dp"
+            android:visibility="invisible" />
+
+        <com.google.android.material.textfield.TextInputLayout
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:elevation="12dp"
+        android:textColorHint="@color/black"
+        app:boxCornerRadiusBottomEnd="15dp"
+        app:boxCornerRadiusBottomStart="15dp"
+        app:boxCornerRadiusTopEnd="15dp"
+        app:boxCornerRadiusTopStart="15dp"
+        app:boxStrokeColor="@color/black"
+        app:boxStrokeWidth="1dp"
+        app:counterMaxLength="50"
+        app:counterEnabled="true"
+        app:counterTextColor="@color/black"
+        app:endIconCheckable="true"
+        app:endIconMode="clear_text"
+        app:endIconTint="@color/black">
+
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/localityINP"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Locality"
+            android:maxLength="50"
+            android:inputType="text"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+        <TextView
+            android:id="@+id/errorCountryTXT"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            android:text="@string/error_generic"
+            android:textColor="@color/crimson_red"
+            android:layout_marginLeft="25dp"
+            android:textSize="12dp"
+            android:visibility="invisible" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:elevation="12dp"
+        android:textColorHint="@color/black"
+        app:boxCornerRadiusBottomEnd="15dp"
+        app:boxCornerRadiusBottomStart="15dp"
+        app:boxCornerRadiusTopEnd="15dp"
+        app:boxCornerRadiusTopStart="15dp"
+        app:boxStrokeColor="@color/black"
+        app:boxStrokeWidth="1dp"
+        app:counterMaxLength="50"
+        app:counterEnabled="true"
+        app:counterTextColor="@color/black"
+        app:endIconCheckable="true"
+        app:endIconMode="clear_text"
+        app:endIconTint="@color/black">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/countryINP"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Country"
+            android:maxLength="25"
+            android:inputType="text"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/continueBTN"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="25dp"
+            android:background="@drawable/customized_buttons"
+            android:elevation="2dp"
+            android:padding="10dp"
+            android:text="Continue" />
+    </LinearLayout>
+
+    </ScrollView>
+
+
+
+</LinearLayout>

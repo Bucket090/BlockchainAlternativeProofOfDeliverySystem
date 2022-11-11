@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="blue_deep_water">#04619f</color>
+    <color name="engine_oil_blue">#6daddb</color>
+    <color name="default_text_blue">#123962</color>
+    <color name="crimson_red">#a71d31</color>
+    <color name="gray">#E2E2E2</color>
+    <color name="vista_white">#Fdfcfa</color>
+
+</resources>

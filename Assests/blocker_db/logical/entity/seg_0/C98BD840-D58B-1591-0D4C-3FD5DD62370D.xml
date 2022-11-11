@@ -1,0 +1,212 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="C98BD840-D58B-1591-0D4C-3FD5DD62370D" name="User_Profile">
+<createdBy>Jake_</createdBy>
+<createdTime>2021-10-11 21:34:25 UTC</createdTime>
+<ownerDesignName>blocker_db</ownerDesignName>
+<engineerTo>
+<item key="9067BA9C-75D2-2321-FA0B-EF59CB5B13DF" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="User_Id" id="E4ACFD41-4E3E-8620-4153-ECE91EFE5E8E">
+<createdBy>Jake_</createdBy>
+<createdTime>2021-10-11 21:34:43 UTC</createdTime>
+<ownerDesignName>blocker_db</ownerDesignName>
+<engineerTo>
+<item key="9067BA9C-75D2-2321-FA0B-EF59CB5B13DF" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT057</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="First_Name" id="00D1F493-1338-0E7D-4AA0-5494C4C1349E">
+<createdBy>Jake_</createdBy>
+<createdTime>2021-10-11 21:34:58 UTC</createdTime>
+<ownerDesignName>blocker_db</ownerDesignName>
+<engineerTo>
+<item key="9067BA9C-75D2-2321-FA0B-EF59CB5B13DF" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT037</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Last_Name" id="9CB1A0B3-DFC2-10F9-4CCC-49E815E05F79">
+<createdBy>Jake_</createdBy>
+<createdTime>2021-10-11 21:35:16 UTC</createdTime>
+<ownerDesignName>blocker_db</ownerDesignName>
+<engineerTo>
+<item key="9067BA9C-75D2-2321-FA0B-EF59CB5B13DF" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT037</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Gender" id="630A3A21-B117-4E10-94E3-286D84BC1BDF">
+<createdBy>Jake_</createdBy>
+<createdTime>2021-10-11 21:40:59 UTC</createdTime>
+<ownerDesignName>blocker_db</ownerDesignName>
+<engineerTo>
+<item key="9067BA9C-75D2-2321-FA0B-EF59CB5B13DF" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<ownDataTypeParameters>1,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="DOB" id="D68FB1F4-EA2D-D82E-61B1-C3DA7ED26D2B">
+<createdBy>Jake_</createdBy>
+<createdTime>2021-10-11 21:35:23 UTC</createdTime>
+<ownerDesignName>blocker_db</ownerDesignName>
+<engineerTo>
+<item key="9067BA9C-75D2-2321-FA0B-EF59CB5B13DF" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Mobile" id="A8A63B71-9B92-72AC-D415-03E80C410424">
+<createdBy>Jake_</createdBy>
+<createdTime>2021-10-11 21:35:44 UTC</createdTime>
+<ownerDesignName>blocker_db</ownerDesignName>
+<engineerTo>
+<item key="9067BA9C-75D2-2321-FA0B-EF59CB5B13DF" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT037</logicalDatatype>
+<dataTypeSize>15</dataTypeSize>
+<ownDataTypeParameters>15,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Flat_No" id="61D620DA-B3FB-09EC-526C-9839988BF9FC">
+<createdBy>Jake_</createdBy>
+<createdTime>2021-10-11 21:36:06 UTC</createdTime>
+<ownerDesignName>blocker_db</ownerDesignName>
+<engineerTo>
+<item key="9067BA9C-75D2-2321-FA0B-EF59CB5B13DF" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Street_Number" id="158F4844-D298-1538-7D10-2BDBEF35B15B">
+<createdBy>Jake_</createdBy>
+<createdTime>2021-10-11 21:36:19 UTC</createdTime>
+<ownerDesignName>blocker_db</ownerDesignName>
+<engineerTo>
+<item key="9067BA9C-75D2-2321-FA0B-EF59CB5B13DF" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Street_Name" id="BFA89E72-0C00-C63D-0C7C-CB236C79FFFD">
+<createdBy>Jake_</createdBy>
+<createdTime>2021-10-11 21:36:35 UTC</createdTime>
+<ownerDesignName>blocker_db</ownerDesignName>
+<engineerTo>
+<item key="9067BA9C-75D2-2321-FA0B-EF59CB5B13DF" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT037</logicalDatatype>
+<dataTypeSize>150</dataTypeSize>
+<ownDataTypeParameters>150,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Locality" id="BB8A3874-8D76-4ED3-C7D7-CF5562119623">
+<createdBy>Jake_</createdBy>
+<createdTime>2021-10-11 21:37:23 UTC</createdTime>
+<ownerDesignName>blocker_db</ownerDesignName>
+<engineerTo>
+<item key="9067BA9C-75D2-2321-FA0B-EF59CB5B13DF" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT037</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Country" id="C7CFCD45-982A-4D12-F9C2-DD8802C63384">
+<createdBy>Jake_</createdBy>
+<createdTime>2021-10-11 21:38:56 UTC</createdTime>
+<ownerDesignName>blocker_db</ownerDesignName>
+<engineerTo>
+<item key="9067BA9C-75D2-2321-FA0B-EF59CB5B13DF" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT037</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Crypto_Address" id="457C309C-4E84-51A0-0D81-ED00A0027721">
+<createdBy>Jake_</createdBy>
+<createdTime>2021-10-11 21:39:08 UTC</createdTime>
+<ownerDesignName>blocker_db</ownerDesignName>
+<engineerTo>
+<item key="9067BA9C-75D2-2321-FA0B-EF59CB5B13DF" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT037</logicalDatatype>
+<dataTypeSize>512</dataTypeSize>
+<ownDataTypeParameters>512,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="305446D3-AC82-9D06-1964-BBF7C4DD37DA" name="User_Profile PK">
+<createdBy>Jake_</createdBy>
+<createdTime>2021-10-11 21:34:56 UTC</createdTime>
+<ownerDesignName>blocker_db</ownerDesignName>
+<engineerTo>
+<item key="9067BA9C-75D2-2321-FA0B-EF59CB5B13DF" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>E4ACFD41-4E3E-8620-4153-ECE91EFE5E8E</attributeRef>
+</usedAttributes>
+</identifier>
+<identifier id="7200FF10-8ED3-A817-97B0-431302E4B3A5" name="Key_2">
+<createdBy>Jake_</createdBy>
+<createdTime>2021-10-12 15:23:57 UTC</createdTime>
+<ownerDesignName>blocker_db</ownerDesignName>
+<engineerTo>
+<item key="9067BA9C-75D2-2321-FA0B-EF59CB5B13DF" value="true"/>
+</engineerTo>
+<newElementsIDs>457C309C-4E84-51A0-0D81-ED00A0027721</newElementsIDs>
+<usedAttributes>
+<attributeRef>457C309C-4E84-51A0-0D81-ED00A0027721</attributeRef>
+</usedAttributes>
+</identifier>
+<identifier id="0E63A315-4513-B49A-3CFB-269C233F5EC9" name="Key_3">
+<createdBy>Jake_</createdBy>
+<createdTime>2021-10-12 15:24:05 UTC</createdTime>
+<ownerDesignName>blocker_db</ownerDesignName>
+<engineerTo>
+<item key="9067BA9C-75D2-2321-FA0B-EF59CB5B13DF" value="true"/>
+</engineerTo>
+<newElementsIDs>A8A63B71-9B92-72AC-D415-03E80C410424</newElementsIDs>
+<usedAttributes>
+<attributeRef>A8A63B71-9B92-72AC-D415-03E80C410424</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

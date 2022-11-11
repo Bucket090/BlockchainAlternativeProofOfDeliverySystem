@@ -1,0 +1,273 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/bgworkerdashboard">
+
+    <LinearLayout
+        android:id="@+id/deviceheader"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:visibility="visible"
+        android:layout_gravity="center"
+        android:layout_marginBottom="20dp">
+
+
+        <TextView
+            android:id="@+id/deviceNameTXT"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:padding="1dp"
+            android:text="Device Name"
+            android:textColor="@color/white"
+            android:textSize="35dp" />
+
+        <TextView
+            android:id="@+id/deviceStateTXT"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Device State"
+            android:textSize="20dp"
+            android:textStyle="normal"
+            android:textColor="@color/crimson_red" />
+
+    </LinearLayout>
+
+    <ProgressBar
+        android:id="@+id/user_device_details_progress"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_gravity="center"
+        android:indeterminate="true"
+        android:layout_marginTop="200dp"
+        android:visibility="gone"
+        android:indeterminateTint="@color/blue_deep_water"
+        app:layout_constraintBottom_toBottomOf="@+id/list_available_devices"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.09" />
+
+    <ScrollView
+        android:id="@+id/scrollview_Action"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:elevation="10dp"
+        android:visibility="visible"
+        android:scrollbars="none">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:layout_marginLeft="15dp"
+            android:padding="5dp"
+            android:text="Content"
+            android:textColor="@color/black"
+            android:textSize="15dp" />
+
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/DefaultLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            app:cardBackgroundColor="@color/white"
+            android:layout_marginBottom="0.5dp"
+            app:contentPadding="15dp">
+
+            <ImageButton
+                android:id="@+id/default_device"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/star_device_outline"
+                tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+            <TextView
+                android:id="@+id/DefaultTxt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:layout_marginLeft="40dp"
+                android:text="Set as Default"
+                android:textColor="@color/black"
+                android:textSize="15dp" />
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/ConnectDevicelayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            app:cardBackgroundColor="@color/white"
+            android:layout_marginBottom="0.5dp"
+            app:contentPadding="15dp">
+
+            <ImageButton
+                android:id="@+id/connect_device"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/bluetooth_searching"
+                android:backgroundTint="@color/black"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:layout_marginLeft="40dp"
+                android:text="Connect with Device"
+                android:textColor="@color/black"
+                android:textSize="15dp" />
+
+        </androidx.cardview.widget.CardView>
+
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/changePasswordLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            app:cardBackgroundColor="@color/white"
+            android:layout_marginBottom="0.5dp"
+            app:contentPadding="15dp">
+
+            <ImageButton
+                android:id="@+id/changePasswordBTN"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_marginRight="15dp"
+                android:background="@drawable/change_password"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/default_device"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+            <TextView
+                android:id="@+id/updatePasswordTXT"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:text="Change Password"
+                android:layout_marginLeft="40dp"
+                android:textColor="@color/black"
+                android:textSize="15dp" />
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/copySmartContractLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            app:cardBackgroundColor="@color/white"
+            android:layout_marginBottom="0.5dp"
+            app:contentPadding="15dp">
+
+            <ImageButton
+                android:id="@+id/copyIconBTN"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/copy_icon"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/changePasswordBTN"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:text="Copy Smart Contract"
+                android:layout_marginLeft="40dp"
+                android:textColor="@color/black"
+                android:textSize="15dp" />
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/generateLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            app:cardBackgroundColor="@color/white"
+            android:layout_marginBottom="0.5dp"
+            app:contentPadding="15dp">
+
+            <ImageButton
+                android:id="@+id/generate"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/qrcode_icon"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/changePasswordBTN"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:text="Generate Device QR Code"
+                android:textColor="@color/black"
+                android:layout_marginLeft="40dp"
+                android:textSize="15dp" />
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/deleteDevice"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            app:cardBackgroundColor="@color/white"
+            android:layout_marginBottom="0.5dp"
+            app:contentPadding="15dp">
+
+            <ImageButton
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/unlink_device"
+                android:backgroundTint="@color/crimson_red"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/changePasswordBTN"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:text="Remove Device"
+                android:textColor="@color/crimson_red"
+                android:layout_marginLeft="40dp"
+                android:textSize="15dp" />
+
+        </androidx.cardview.widget.CardView>
+
+
+
+    </LinearLayout>
+
+    </ScrollView>
+</LinearLayout>

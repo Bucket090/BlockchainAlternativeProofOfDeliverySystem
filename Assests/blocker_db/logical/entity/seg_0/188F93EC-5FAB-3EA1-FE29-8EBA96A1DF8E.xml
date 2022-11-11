@@ -1,0 +1,110 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="188F93EC-5FAB-3EA1-FE29-8EBA96A1DF8E" name="Company">
+<createdBy>Jake_</createdBy>
+<createdTime>2021-10-12 15:36:39 UTC</createdTime>
+<ownerDesignName>blocker_db</ownerDesignName>
+<engineerTo>
+<item key="9067BA9C-75D2-2321-FA0B-EF59CB5B13DF" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="Company_Id" id="B1A82B29-E67A-B22D-6F48-FC7829FA6B3F">
+<createdBy>Jake_</createdBy>
+<createdTime>2021-10-12 15:36:43 UTC</createdTime>
+<ownerDesignName>blocker_db</ownerDesignName>
+<engineerTo>
+<item key="9067BA9C-75D2-2321-FA0B-EF59CB5B13DF" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT057</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Company_Name" id="6660CF94-2D03-6A84-F26D-81989E1F2DF5">
+<createdBy>Jake_</createdBy>
+<createdTime>2021-10-12 15:39:12 UTC</createdTime>
+<ownerDesignName>blocker_db</ownerDesignName>
+<engineerTo>
+<item key="9067BA9C-75D2-2321-FA0B-EF59CB5B13DF" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT037</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="spoke_person" id="EDFBC292-0E7B-1F07-E263-5F55BE2ACAA4">
+<createdBy>Jake_</createdBy>
+<createdTime>2021-10-12 15:39:31 UTC</createdTime>
+<ownerDesignName>blocker_db</ownerDesignName>
+<engineerTo>
+<item key="9067BA9C-75D2-2321-FA0B-EF59CB5B13DF" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT037</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="phone_number" id="6F073B46-4699-7A73-1732-05B225F58992">
+<createdBy>Jake_</createdBy>
+<createdTime>2021-10-12 15:39:56 UTC</createdTime>
+<ownerDesignName>blocker_db</ownerDesignName>
+<engineerTo>
+<item key="9067BA9C-75D2-2321-FA0B-EF59CB5B13DF" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT037</logicalDatatype>
+<dataTypeSize>15</dataTypeSize>
+<ownDataTypeParameters>15,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="email" id="560E9136-D749-7232-928A-0B6CAB8004BF">
+<createdBy>Jake_</createdBy>
+<createdTime>2021-10-12 15:40:14 UTC</createdTime>
+<ownerDesignName>blocker_db</ownerDesignName>
+<engineerTo>
+<item key="9067BA9C-75D2-2321-FA0B-EF59CB5B13DF" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT037</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="67C81D51-16D5-E1CB-46AE-FB5E76CB0C9C" name="Company PK">
+<createdBy>Jake_</createdBy>
+<createdTime>2021-10-12 15:39:09 UTC</createdTime>
+<ownerDesignName>blocker_db</ownerDesignName>
+<engineerTo>
+<item key="9067BA9C-75D2-2321-FA0B-EF59CB5B13DF" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>B1A82B29-E67A-B22D-6F48-FC7829FA6B3F</attributeRef>
+</usedAttributes>
+</identifier>
+<identifier id="C519A711-92FE-1E58-7E28-27BFB81D57DF" name="Key_2">
+<createdBy>Jake_</createdBy>
+<createdTime>2021-10-12 16:05:12 UTC</createdTime>
+<ownerDesignName>blocker_db</ownerDesignName>
+<engineerTo>
+<item key="9067BA9C-75D2-2321-FA0B-EF59CB5B13DF" value="true"/>
+</engineerTo>
+<newElementsIDs>6660CF94-2D03-6A84-F26D-81989E1F2DF5</newElementsIDs>
+<usedAttributes>
+<attributeRef>6660CF94-2D03-6A84-F26D-81989E1F2DF5</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

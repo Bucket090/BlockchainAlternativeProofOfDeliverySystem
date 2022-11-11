@@ -1,0 +1,8 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<OSDM_Design class="oracle.dbtools.crest.model.design.Design" name="blocker_db" id="8BE8E29C-1044-EC26-8210-94683B0A8B98" version="3.5">
+<createdBy>Jake_</createdBy>
+<createdTime>2021-10-11 21:32:41 UTC</createdTime>
+<ownerDesignName>blocker_db</ownerDesignName>
+<capitalNames>false</capitalNames>
+<designId>8BE8E29C-1044-EC26-8210-94683B0A8B98</designId>
+</OSDM_Design>

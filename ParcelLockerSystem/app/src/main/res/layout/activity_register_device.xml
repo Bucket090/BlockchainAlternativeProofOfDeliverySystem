@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bgaccessdevice_white"
+    tools:context=".register_device">
+
+    <TextView
+        android:id="@+id/AccessDeviceTXT"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:text="Register Device"
+        android:textColor="@color/white"
+        android:textSize="40dp" />
+
+    <ProgressBar
+        android:id="@+id/waiting_blockchain"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:layout_gravity="center"
+        android:visibility="gone"
+        android:indeterminate="true"
+        android:layout_marginTop="250dp"
+        android:indeterminateTint="@color/blue_deep_water"
+        />
+
+    <LinearLayout
+        android:id="@+id/registerdevice_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/AccessDeviceTXT"
+        android:layout_marginTop="30dp"
+        android:orientation="vertical"
+        android:padding="20dp"
+        android:visibility="visible">
+
+        <Button
+            android:id="@+id/searchNearbyDeviceBTN"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_gravity="end"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/customized_buttons"
+            android:drawableBottom="@drawable/bluetooth_searching"
+            android:elevation="20dp"
+            />
+
+
+        <TextView
+            android:id="@+id/error_lockerIDTXT"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            android:layout_marginTop="10dp"
+            android:text="@string/error_generic"
+            android:textColor="@color/crimson_red"
+            android:textSize="12dp"
+            android:visibility="invisible" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="25dp"
+            android:elevation="12dp"
+            android:textColorHint="@color/black"
+            app:boxCornerRadiusBottomEnd="15dp"
+            app:boxCornerRadiusBottomStart="15dp"
+            app:boxCornerRadiusTopEnd="15dp"
+            app:boxCornerRadiusTopStart="15dp"
+            app:boxStrokeColor="@color/default_text_blue"
+            app:boxStrokeWidth="3dp"
+            app:counterTextColor="@color/black"
+            app:endIconCheckable="true"
+            app:endIconMode="clear_text"
+            app:endIconTint="@color/black">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/lockerIdINP"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:enabled="false"
+                android:hint="Locker Id"
+                android:inputType="text"
+                android:textColor="@color/black"
+                android:textColorHint="@color/black" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <TextView
+            android:id="@+id/errorPasswordTxt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            android:text="@string/error_generic"
+            android:textColor="@color/crimson_red"
+            android:textSize="12dp"
+            android:visibility="gone" />
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="25dp"
+            android:elevation="12dp"
+            android:textColorHint="@color/black"
+            app:boxCornerRadiusBottomEnd="15dp"
+            app:boxCornerRadiusBottomStart="15dp"
+            app:boxCornerRadiusTopEnd="15dp"
+            app:boxCornerRadiusTopStart="15dp"
+            app:boxStrokeColor="@color/default_text_blue"
+            app:boxStrokeWidth="3dp"
+            app:counterTextColor="@color/black"
+            app:endIconCheckable="true"
+            app:endIconMode="clear_text"
+            app:counterMaxLength="4"
+            app:endIconTint="@color/black">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/passwordINP"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Password"
+                android:maxLength="4"
+                android:inputType="numberPassword"
+                android:textColor="@color/black"
+                android:textColorHint="@color/black" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <TextView
+            android:id="@+id/errorConfirmPasswordTxt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            android:text="@string/error_generic"
+            android:textColor="@color/crimson_red"
+            android:textSize="12dp"
+            android:visibility="gone" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="25dp"
+            android:elevation="12dp"
+            android:textColorHint="@color/black"
+            app:boxCornerRadiusBottomEnd="15dp"
+            app:boxCornerRadiusBottomStart="15dp"
+            app:boxCornerRadiusTopEnd="15dp"
+            app:boxCornerRadiusTopStart="15dp"
+            app:boxStrokeColor="@color/default_text_blue"
+            app:boxStrokeWidth="3dp"
+            app:counterTextColor="@color/black"
+            app:endIconCheckable="true"
+            app:counterMaxLength="4"
+            app:endIconMode="clear_text"
+            app:endIconTint="@color/black">
+
+        <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/confirmPasswordINP"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:maxLength="4"
+                android:hint="Confirm Password"
+                android:inputType="numberPassword"
+                android:textColor="@color/black"
+                android:textColorHint="@color/black" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <Button
+            android:id="@+id/linkdeviceBTN"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:background="@drawable/customized_buttons"
+            android:elevation="20dp"
+            android:padding="10dp"
+            android:text="Link Device" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/registerdevice_layout"
+        android:layout_centerHorizontal="true">
+
+        <TextView
+            android:id="@+id/register_statustxt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="70dp"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="Status Message"
+            android:textColor="@color/crimson_red"
+            android:textSize="18dp"
+            android:visibility="gone" />
+
+
+    </LinearLayout>
+</RelativeLayout>
